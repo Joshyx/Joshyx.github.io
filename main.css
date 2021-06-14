@@ -1,4 +1,32 @@
 body {
     color: #adbac7;
     background-color: #22272e;
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color:rgb(103, 206, 0);
+}
+h3 {
+    color: #849eb8;
+}
+section {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+div {
+    background-color: red;
+    margin: auto;
+    width: 100px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+li {
+    display: inline-block;
+    margin-right: 20px;
 }
