@@ -7,6 +7,8 @@ body {
 }
 h1 {
     color:rgb(103, 206, 0);
+    margin: 5px 40%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h3 {
     color: #849eb8;
@@ -29,4 +31,10 @@ ul {
 li {
     display: inline-block;
     margin-right: 20px;
+}
+a {
+    color: #adbac7;
+}
+nav {
+    background-color: #2d333b;
 }
