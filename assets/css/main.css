@@ -12,9 +12,10 @@ html {
 
 body {
     background: #22272e;
-    background-image: url('img/bg.png');
+    background-image: url('../img/bg.png');
     background-size: 100%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #adbac7;
 }
 
@@ -28,7 +29,7 @@ a:hover {
 }
 
 header .logo a {
-	background-image: url("img/logo.png");
+	background-image: url("../img/favicon.png");
 	background-size: 90px;
 	background-repeat: no-repeat;
 	display: inline-block;
@@ -67,11 +68,23 @@ section header {
 }
 
 .home {
-    margin-top: 220px;
+    margin-top: 20px;
 }
 
 .games {
     margin-top: 20px;
+}
+
+ul .imglink {
+    margin: 50px;
+}
+
+ul .imglink img {
+	width: 100px;
+	height: 100px;
+}
+ul .imglink img:hover {
+	filter: brightness(80%);
 }
 
 section {
@@ -105,16 +118,20 @@ section .mybutton {
 
 section .contact {
     color: #7aefff;
+    align-items: left;
 }
 section .contact:hover {
     color: #7aefff;
+    align-items: left;
 }
 
 section .contactlink {
     color: #7ad5ff;
+    align-items: left;
 }
 section .contactlink:hover {
     color: #8cf2ff;
+    align-items: left;
 }
 
 .features {
@@ -174,6 +191,51 @@ footer {
     bottom: 0pt;
 }
 
+@media screen and (max-width: 1500px) {
+    section nav {
+        font-family: 'Ubuntu';
+        font-size: 24px;
+        line-height: 36px;
+        text-align: left;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        font-size: 24px;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: -40px;
+    }
+
+    .features figure img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+    }    
+
+    figure figcaption {
+        font-family: 'Ubuntu';
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 100px;
+    }
+
+    ul .imglink {
+        margin: 40px;
+    }
+
+    ul .imglink img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
 @media screen and (max-width: 1140px) {
     section nav {
         font-family: 'Ubuntu';
@@ -207,6 +269,15 @@ footer {
         font-size: 24px;
         margin-top: 10px;
         margin-bottom: 100px;
+    }
+
+    ul .imglink {
+        margin: 30px;
+    }
+
+    ul .imglink img {
+        width: 70px;
+        height: 70px;
     }
 }
 
@@ -245,6 +316,14 @@ footer {
         background-size: 50px;
     }
 
+    ul .imglink {
+        margin: 20px;
+    }
+
+    ul .imglink img {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -265,5 +344,14 @@ footer {
         background: white;
         font-size: 14px;
         margin-top: 29px;
+    }
+
+    ul .imglink {
+        margin: 20px;
+    }
+
+    ul .imglink img {
+        width: 30px;
+        height: 30px;
     }
 }
