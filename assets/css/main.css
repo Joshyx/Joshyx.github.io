@@ -71,20 +71,22 @@ section header {
     margin-top: 20px;
 }
 
-.games {
-    margin-top: 20px;
-}
-
 ul .imglink {
     margin: 50px;
 }
-
 ul .imglink img {
+    margin: 50px;
+    border-radius: 5px;
+}
+
+ul .imglink img:hover {
+    filter: drop-shadow(5px 5px 4px black) brightness(80%);
+}
+
+img {
 	width: 100px;
 	height: 100px;
-}
-ul .imglink img:hover {
-	filter: brightness(80%);
+    filter: drop-shadow(5px 5px 4px black);
 }
 
 section {
@@ -98,8 +100,21 @@ section nav {
     line-height: 55px;
     text-align: center;
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+}
+
+section .contactlinks {
+    flex-direction: column;
+}
+
+section nav * {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+section .contactlinks * {
+    margin: 10px;
 }
 
 section .list {
@@ -130,6 +145,7 @@ section .list {
   
 #myBtn:hover {
     background-color: white;
+    filter: drop-shadow(5px 5px 4px black);
 }
 
 #discord {
@@ -137,6 +153,12 @@ section .list {
     display: none;
     bottom: 20px; /* Place the button at the bottom of the page */
     right: 120px; /* Place the button 30px from the right */
+}
+
+ul iframe {
+    margin-left: 25px;
+    margin-right: 25px;
+    filter: drop-shadow(5px 5px 4px black);
 }
 
 section .mybutton {
@@ -211,7 +233,7 @@ figure figcaption a:hover {
 section .mybutton:hover {
     background: white;
     font-size: 26px;
-    margin-top: 29px;
+    filter: drop-shadow(5px 5px 4px black);
 }
 
 .par {

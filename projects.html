@@ -45,10 +45,10 @@
             <header>
                 Schlucy
             </header>
-            <nav>
-                Schlucy is the game I'm currently working on.</br>
-                It is made in Unity with C# for over 4 months.</br>
-                The game is available on itch.io</br>
+                <nav>
+                    Schlucy is the game I'm currently working on.</br>
+                    It is made in Unity with C# for over 4 months.</br>
+                    The game is available on itch.io</br>
                 </nav>
             <ul>
                 <iframe src="https://itch.io/embed/956040?bg_color=ffca9a&amp;fg_color=383634&amp;link_color=006777&amp;border_color=248b9b" width="552" height="167" frameborder="0"><a href="https://joshyx.itch.io/schlucy" target="_blank" rel="noopener noreferrer">Schlucy by Joshyx</a></iframe>
@@ -63,10 +63,13 @@
                 JarGame
             </header>
             <nav>
-                JarGame is a Java library for making games.</br>
-                It is similiar to Pygame and has many built-in utility funtions</br>
-                for handling save files, web connections or physics.
-            </nav>
+                <img src="https://www.chip.de/ii/8/2/6/8/7/8/4/java-419efda760a4e629.jpg" alt="Java">
+                <p>
+                    JarGame is a Java library for making games.</br>
+                    It is similiar to Pygame and has many built-in utility funtions</br>
+                    for handling save files, web connections or physics.
+                </p>
+                </nav>
             <ul>
                 <a class="mybutton" href="https://github.com/Joshyx/JarGame/raw/main/downloads/jargame.jar">Download</a>
                 <a class="mybutton" href="https://github.com/Joshyx/JarGame" target="_blank" rel="noopener noreferrer">Source Code</a>
@@ -78,9 +81,12 @@
                 JesinBoomer
             </header>
             <nav>
-                JesinBoomer is a really stupid Discord Bot</br>
-                that can help you manage your server,</br>
-                send you funny memes or connect with other servers.
+                <img src="https://cdn.discordapp.com/avatars/805094822486343681/1cdfbf1628e8d1d1a765a63bb10e43a6.png" alt="Boomer">
+                <p>
+                    JesinBoomer is a really stupid Discord Bot</br>
+                    that can help you manage your server,</br>
+                    send you funny memes or connect with other servers.
+                </p>
             </nav>
             <ul>
                 <a class="mybutton" href="https://joshyx.github.io/jesin/invite" target="_blank" rel="noopener noreferrer">Invite</a>
@@ -95,13 +101,14 @@
 
             // When the user scrolls down 20px from the top of the document, show the button
             window.onscroll = function() {scrollFunction()};
+            window.onload = function() {start()};
 
             function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
             }
 
             // When the user clicks on the button, scroll to the top of the document
