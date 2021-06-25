@@ -74,10 +74,6 @@ section header {
 ul .imglink {
     margin: 50px;
 }
-ul .imglink img {
-    margin: 50px;
-    border-radius: 5px;
-}
 
 ul .imglink img:hover {
     filter: drop-shadow(5px 5px 4px black) brightness(80%);
@@ -87,8 +83,13 @@ img {
 	width: 100px;
 	height: 100px;
     filter: drop-shadow(5px 5px 4px black);
+    border-radius: 100px;
 }
 
+ul .imglink img {
+    margin: 50px;
+    border-radius: 5px;
+}
 section {
     text-align: center;
     padding: 8%;
