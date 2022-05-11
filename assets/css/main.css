@@ -142,6 +142,7 @@ section .list {
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 6px 10px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
+    filter: drop-shadow(3px 3px 2px black);
 }
   
 #myBtn:hover {
@@ -149,11 +150,15 @@ section .list {
     filter: drop-shadow(5px 5px 4px black);
 }
 
-#discord {
+#discordFrame {
     position: fixed;
     display: none;
     bottom: 20px; /* Place the button at the bottom of the page */
     right: 120px; /* Place the button 30px from the right */
+}
+
+#discord:hover iframe {
+    display: block;
 }
 
 ul iframe {
@@ -174,6 +179,11 @@ section .mybutton {
     margin-left: 5%;
     border: none;
     border-radius: 5px;
+    filter: drop-shadow(2px 2px 1px black);
+}
+section .mybutton:hover {
+    background: white;
+    filter: drop-shadow(5px 5px 4px black);
 }
 
 section .contact {
@@ -229,12 +239,6 @@ figure figcaption {
 
 figure figcaption a:hover {
     color: gray;
-}
-
-section .mybutton:hover {
-    background: white;
-    font-size: 26px;
-    filter: drop-shadow(5px 5px 4px black);
 }
 
 .par {
