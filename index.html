@@ -21,10 +21,25 @@
                 </a>
             </div>
             <div class="header-right">
-                <div><a href="">Moin</a></div>
-                <div><a href="">Moin</a></div>
-                <div><a href="">Moin</a></div>
+                <a href="">Moin</a>
+                <a href="">Moin</a>
+                <a href="">Moin</a>
             </div>
         </header>
+        <section class="about">
+            <a href="">About Me</a>
+        </section>
     </body>
+    <script>
+        const about = document.getElementsByClassName("about")[0]
+
+        Array.from(about.getElementsByTagName("a")).forEach((item, index) => {
+            item.onmouseenter = () => {
+                about.dataset.isActive = "true"
+            }
+            item.onmouseleave = () => {
+                about.dataset.isActive = "false"
+            }
+        })
+    </script>
 </html>

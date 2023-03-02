@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: atkinson;
+  padding-top: 14vh;
 }
 
 a {
@@ -9,9 +10,16 @@ a {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   padding: 2vh 3vw 2vh 3vw;
-  background-color: aquamarine;
+  background-color: #E384FF;
+  border-bottom: #000 2px solid;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 header .header-left {
   width: 50%;
@@ -22,22 +30,25 @@ header .header-left a {
 header .header-left a img {
   height: 8vh;
   width: auto;
+  border-radius: 20px;
+  filter: drop-shadow(2px 2px 2px rgba(34, 34, 34, 0.8235294118));
+  transform: scale(1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+header .header-left a img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(3px 3px 3px #222);
 }
 header .header-right {
   display: flex;
   width: 50%;
 }
-header .header-right div {
+header .header-right a {
   width: 100%;
-  padding-top: 2vh;
+  margin: 2vh 5vw 3vh 5vw;
   text-align: center;
   font-size: 30px;
-}
-header .header-right a {
   position: relative;
-}
-header .header-right a:hover {
-  color: #000;
 }
 header .header-right a::before {
   content: "";
@@ -47,7 +58,7 @@ header .header-right a::before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #72195A;
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -55,23 +66,33 @@ header .header-right a:hover::before {
   transform: scaleX(1);
 }
 
+.about {
+  padding: 0 5vw 0 5vw;
+  min-height: 100px;
+  background-image: url("../img/instagram.png");
+  background-repeat: no-repeat;
+}
+.about[isActive=true] {
+  background-image: url("../img/twitter.png");
+}
+
 @font-face {
   font-family: atkinson;
-  src: url(../fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Regular.ttf);
+  src: url("../fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Regular.ttf");
 }
 @font-face {
   font-family: atkinson;
-  src: url(../fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Bold.ttf);
+  src: url("../fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Bold.ttf");
   font-weight: bold;
 }
 @font-face {
   font-family: atkinson;
-  src: url(../fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Italic.ttf);
+  src: url("../fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Italic.ttf");
   font-style: italic;
 }
 @font-face {
   font-family: atkinson;
-  src: url(../fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-BoldItalic.ttf);
+  src: url("../fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-BoldItalic.ttf");
   font-weight: bold;
   font-style: italic;
 }
